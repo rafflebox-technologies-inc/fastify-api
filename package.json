@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engine": {
+    "version": "^16"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "build:docker": "docker build -t api-v3:latest .",
     "clean": "rm -rf build",
-    "dev": "ts-node src/index.js"
+    "dev": "ts-node src/index.ts",
+    "dev:docker": "docker run -p 8080:8080 api-v3:latest"
   },
   "dependencies": {
     "fastify": "^4.2.0"

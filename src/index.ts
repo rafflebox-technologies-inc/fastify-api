@@ -24,11 +24,18 @@ const opts: fastify.RouteShorthandOptions = {
 };
 
 server.get("/ping", opts, (request, reply) => {
-  console.log("test");
+  console.log("ping");
   //console.log(reply.res); // this is the http.ServerResponse with correct typings!
   reply.code(200).send({ pong: "it worked!" });
 });
 
-server.listen({
-  port: 8080,
+const port = 8080;
+
+server.listen(port, "0.0.0.0", function (err, address) {
+  if (err) {
+    console.error(err);
+    process.exit(1);
+  }
+
+  console.log(`server listening on ${address}`);
 });
