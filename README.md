@@ -12,5 +12,5 @@ yarn build
 Start the API by running:
 
 ```sh
-yarn start
+yarn dev
 ```
