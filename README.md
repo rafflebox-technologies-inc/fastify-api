@@ -1,4 +1,5 @@
 # Fastify API
+Example api project that uses fastify and docker.
 
 ## Build
 
