@@ -1,4 +1,4 @@
-# Rafflebox API
+# Fastify API
 
 ## Build
 
