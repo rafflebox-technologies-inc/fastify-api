@@ -14,7 +14,7 @@
     "dev:docker": "docker run -p 8080:8080 api-v3:latest"
   },
   "dependencies": {
-    "fastify": "^4.2.0"
+    "fastify": "^4.10.2"
   },
   "devDependencies": {
     "@types/node": "^18.0.1",
